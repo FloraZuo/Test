@@ -1,0 +1,15 @@
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Amqp.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Amqp.pdb
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Configuration.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Configuration.XmlSerializers.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Logging.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Json.Net.6.0.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\log4net.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\RabbitMQ.Client.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Wintellect.PowerThreading.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Configuration.pdb
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Beisen.Logging.pdb
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\bin\Debug\Json.Net.6.0.pdb
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\obj\Debug\Beisen.Amqp.csprojResolveAssemblyReference.cache
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\obj\Debug\Beisen.Amqp.dll
+D:\左川\工作\EAS重构\Amqp\Beisen.Amqp\obj\Debug\Beisen.Amqp.pdb

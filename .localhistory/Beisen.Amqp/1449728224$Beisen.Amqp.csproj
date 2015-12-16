@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D66D6AC-13CB-4C27-89AA-7CFBA419353A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Beisen.Amqp</RootNamespace>
+    <AssemblyName>Beisen.Amqp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Beisen.Amqp.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Beisen.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Beisen.Configuration.1.1.0.4\lib\net35\Beisen.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Beisen.Configuration.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Beisen.Configuration.1.1.0.4\lib\net35\Beisen.Configuration.XmlSerializers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Beisen.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Beisen.Logging.1.1.0.20\lib\net35\Beisen.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Json.Net.6.0, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.Net.6.0.6.0.3.17227\lib\net35\Json.Net.6.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <HintPath>..\packages\log4net.1.2.9.0\lib\net11\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=2.8.7.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_ExternalReferences\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wintellect.PowerThreading, Version=1.0.2352.19171, Culture=neutral, PublicKeyToken=e7bb31f1c2166e2e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Wintellect.PowerThreading.1.0.0.0\lib\net35\Wintellect.PowerThreading.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmqpConnectionException.cs" />
+    <Compile Include="AmqpServer.cs" />
+    <Compile Include="AmqpSettings.cs" />
+    <Compile Include="BaseMessageHandler.cs" />
+    <Compile Include="BaseSerializableQueueProduce.cs" />
+    <Compile Include="ConcurrentQueueConsumer.cs" />
+    <Compile Include="ExchangeSetting.cs" />
+    <Compile Include="ExchangeType.cs" />
+    <Compile Include="IMessageHandler.cs" />
+    <Compile Include="IMessageSerializer.cs" />
+    <Compile Include="JsonBaseMessageHandler.cs" />
+    <Compile Include="JsonMessageSerializer.cs" />
+    <Compile Include="JsonQueueProducer.cs" />
+    <Compile Include="MessageResult.cs" />
+    <Compile Include="MessageContext.cs" />
+    <Compile Include="MessageStatus.cs" />
+    <Compile Include="NoReply.cs" />
+    <Compile Include="NoReplyJsonQueueProducer.cs" />
+    <Compile Include="NoReplyStringQueueProducer.cs" />
+    <Compile Include="NoSerializerException.cs" />
+    <Compile Include="QueueBinding.cs" />
+    <Compile Include="QueueConsumer.cs" />
+    <Compile Include="QueueConsumerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueProducer.cs" />
+    <Compile Include="QueueSetting.cs" />
+    <Compile Include="RuntimeInternal.cs" />
+    <Compile Include="ServerStateManager.cs" />
+    <Compile Include="StringMessageSerializer.cs" />
+    <Compile Include="StringQueueProducer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
